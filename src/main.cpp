@@ -242,7 +242,8 @@ usart1rx_task (void *pvParameters)
 	      /* resets a xUsartRxedChars queue to empty state */
 	      xQueueReset(usart1.xUsartRxedChars);
 #ifdef COMMAND_ECHO
-	      usart1.puts ("\r\nSystem is busy, wait for last to finish...\r\n> ");
+	      usart1.puts (
+		  "\r\nSystem is busy, wait for last to finish...\r\n> ");
 #endif
 	    }
 	  break;
