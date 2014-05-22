@@ -1,0 +1,50 @@
+Microsecond delay function for STM32
+
+March 25, 2013 by kbiva https://kbiva.wordpress.com/2013/03/25/microsecond-delay-function-for-stm32/comment-page-1/
+
+Using Data Watchpoint and Trace Registers (DWT).
+32-bit CYCCNT register counts processor cycles.
+
+#include "stm32f10x.h"
+ 
+extern uint32_t SystemCoreClock;
+ 
+void DWT_Init(void) 
+{
+  if (!(CoreDebug->DEMCR & CoreDebug_DEMCR_TRCENA_Msk)) 
+  {
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    DWT->CYCCNT = 0;
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+  }
+}
+ 
+uint32_t DWT_Get(void)
+{
+  return DWT->CYCCNT;
+}
+ 
+__inline
+uint8_t DWT_Compare(int32_t tp)
+{
+  return (((int32_t)DWT_Get() - tp) < 0);
+}
+ 
+void DWT_Delay(uint32_t us) // microseconds
+{
+  int32_t tp = DWT_Get() + us * (SystemCoreClock/1000000);
+  while (DWT_Compare(tp));
+}
+
+Maximum delay is about 59 seconds when microprocessor is clocked at 72Mhz.
+DWT_Get function is useful to benchmark code at runtime.
+For example when running at 72mhz, we measure how much milliseconds took our code:
+
+
+	uint32_t st,en;
+	DWT_Init();
+	...
+	st=DWT_Get();
+	... // code that is measured
+	en=DWT_Get();
+	printf("%d ms\r\n",((en-st)/72000));
