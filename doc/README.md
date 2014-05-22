@@ -22,4 +22,4 @@
 
 2. Support backspace key in command line.
 
-3. Support Ctrl+c to cancel command.
+3. Support ctrl+c to cancel command.
