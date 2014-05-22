@@ -38,13 +38,11 @@
 
 /* Task priorities. */
 #define LED_TASK_PRIORITY		( tskIDLE_PRIORITY + 1 )
-#define RTC_TASK_PRIORITY		( tskIDLE_PRIORITY + 1 )
 #define USART1RX_TASK_PRIORITY		( tskIDLE_PRIORITY + 3 )
 #define CMDCSLTask_TASK_PRIORITY	( tskIDLE_PRIORITY + 2 )
 
 /* Task stack size */
 #define LED_TASK_STACK_SIZE		( configMINIMAL_STACK_SIZE )
-#define RTC_TASK_STACK_SIZE		( configMINIMAL_STACK_SIZE )
 #define USART1RX_TASK_STACK_SIZE	( configMINIMAL_STACK_SIZE + 256 )
 #define CMDCSLTask_TASK_STACK_SIZE	( configMINIMAL_STACK_SIZE + 256 )
 
@@ -59,8 +57,6 @@ static void
 prvSetupHardware (void);
 static void
 led_task (void *pvParameters);
-static void
-rtc_task (void *pvParameters);
 static void
 usart1rx_task (void *pvParameters);
 
@@ -91,8 +87,6 @@ main (void)
 
   xTaskCreate(led_task, "led_task", LED_TASK_STACK_SIZE, NULL,
 	      LED_TASK_PRIORITY, NULL);
-  xTaskCreate(rtc_task, "rtc_task", RTC_TASK_STACK_SIZE, NULL,
-	      RTC_TASK_PRIORITY, NULL);
   xTaskCreate(usart1rx_task, "usart1rx_task", USART1RX_TASK_STACK_SIZE, NULL,
 	      USART1RX_TASK_PRIORITY, NULL);
   xTaskCreate(vCommandConsoleTask, "cmdcsl_task", CMDCSLTask_TASK_STACK_SIZE,
@@ -134,23 +128,6 @@ led_task (void *pvParameters)
       led0.chg_st ();
       /* The task should execute every 500 milliseconds exactly. */
       vTaskDelayUntil (&xLastWakeTime, (500 / portTICK_RATE_MS));
-    }
-}
-
-/*-----------------------------------------------------------*/
-
-/* RTC every second task */
-void
-rtc_task (void *pvParameters)
-{
-  /* As per most tasks, this task is implemented in an infinite loop. */
-  for (;;)
-    {
-      /* Block waiting for the semaphore to become available. */
-      if ( xSemaphoreTake( stm32rtc.rtcSemaphore, portMAX_DELAY ) == pdTRUE)
-	{
-//	  xQueueSend(usart1txQueue, &cmd_table[date], portMAX_DELAY);
-	}
     }
 }
 

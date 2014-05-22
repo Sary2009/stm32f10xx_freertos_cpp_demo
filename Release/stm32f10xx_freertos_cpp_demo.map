@@ -2042,7 +2042,7 @@ END GROUP
  *(.flashtext .flashtext.*)
                 0x080001e4                . = ALIGN (0x4)
 
-.text           0x080001e4     0x4553
+.text           0x080001e4     0x4517
                 0x080001e4                . = ALIGN (0x4)
  *(.text .text.*)
  .text.NVIC_PriorityGroupConfig
@@ -2440,194 +2440,192 @@ END GROUP
  .text._ZN3adc4putsEPcj
                 0x08002290       0x60 ./src/adc/adc.o
                 0x08002290                adc::puts(char*, unsigned int)
- .text._ZL8rtc_taskPv
-                0x080022f0       0x18 ./src/main.o
  .text._ZL13usart1rx_taskPv
-                0x08002308      0x178 ./src/main.o
+                0x080022f0      0x178 ./src/main.o
  .text._ZL8led_taskPv
-                0x08002480       0x20 ./src/main.o
+                0x08002468       0x20 ./src/main.o
  .text.startup.main
-                0x080024a0      0x130 ./src/main.o
-                0x080024a0                main
+                0x08002488      0x114 ./src/main.o
+                0x08002488                main
  .text.vApplicationIdleHook
-                0x080025d0        0x4 ./src/main.o
-                0x080025d0                vApplicationIdleHook
+                0x0800259c        0x4 ./src/main.o
+                0x0800259c                vApplicationIdleHook
  .text.vApplicationStackOverflowHook
-                0x080025d4       0x2c ./src/main.o
-                0x080025d4                vApplicationStackOverflowHook
- .text.__errno  0x08002600        0xc /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-errno.o)
-                0x08002600                __errno
- .text.gmtime   0x0800260c       0x24 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime.o)
-                0x0800260c                gmtime
+                0x080025a0       0x2c ./src/main.o
+                0x080025a0                vApplicationStackOverflowHook
+ .text.__errno  0x080025cc        0xc /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-errno.o)
+                0x080025cc                __errno
+ .text.gmtime   0x080025d8       0x24 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime.o)
+                0x080025d8                gmtime
  .text.gmtime_r
-                0x08002630        0x6 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime_r.o)
-                0x08002630                gmtime_r
- *fill*         0x08002636        0x2 
- .text.malloc   0x08002638       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-malloc.o)
-                0x08002638                malloc
- .text.memcmp   0x08002648       0x1e /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcmp.o)
-                0x08002648                memcmp
- .text.memcpy   0x08002666       0x12 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcpy-stub.o)
-                0x08002666                memcpy
- .text.memset   0x08002678       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memset.o)
-                0x08002678                memset
+                0x080025fc        0x6 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime_r.o)
+                0x080025fc                gmtime_r
+ *fill*         0x08002602        0x2 
+ .text.malloc   0x08002604       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-malloc.o)
+                0x08002604                malloc
+ .text.memcmp   0x08002614       0x1e /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcmp.o)
+                0x08002614                memcmp
+ .text.memcpy   0x08002632       0x12 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcpy-stub.o)
+                0x08002632                memcpy
+ .text.memset   0x08002644       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memset.o)
+                0x08002644                memset
  .text.__tzcalc_limits
-                0x08002688      0x15c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
-                0x08002688                __tzcalc_limits
- .text._mktm_r  0x080027e4      0x290 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
-                0x080027e4                _mktm_r
- .text._free_r  0x08002a74       0x88 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-freer.o)
-                0x08002a74                _free_r
+                0x08002654      0x15c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
+                0x08002654                __tzcalc_limits
+ .text._mktm_r  0x080027b0      0x290 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
+                0x080027b0                _mktm_r
+ .text._free_r  0x08002a40       0x88 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-freer.o)
+                0x08002a40                _free_r
  .text._malloc_r
-                0x08002afc       0xa8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-mallocr.o)
-                0x08002afc                _malloc_r
- .text._sbrk_r  0x08002ba4       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sbrkr.o)
-                0x08002ba4                _sbrk_r
- .text.sprintf  0x08002bc4       0x48 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sprintf.o)
-                0x08002bc4                sprintf
-                0x08002bc4                siprintf
- .text.strcat   0x08002c0c       0x1a /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcat.o)
-                0x08002c0c                strcat
- .text          0x08002c26       0x14 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcmp.o)
-                0x08002c26                strcmp
- .text.strcpy   0x08002c3a       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcpy.o)
-                0x08002c3a                strcpy
+                0x08002ac8       0xa8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-mallocr.o)
+                0x08002ac8                _malloc_r
+ .text._sbrk_r  0x08002b70       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sbrkr.o)
+                0x08002b70                _sbrk_r
+ .text.sprintf  0x08002b90       0x48 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sprintf.o)
+                0x08002b90                sprintf
+                0x08002b90                siprintf
+ .text.strcat   0x08002bd8       0x1a /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcat.o)
+                0x08002bd8                strcat
+ .text          0x08002bf2       0x14 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcmp.o)
+                0x08002bf2                strcmp
+ .text.strcpy   0x08002c06       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcpy.o)
+                0x08002c06                strcpy
  .text.iso_year_adjust
-                0x08002c4a       0xc4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
- *fill*         0x08002d0e        0x2 
+                0x08002c16       0xc4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
+ *fill*         0x08002cda        0x2 
  .text.strftime
-                0x08002d10      0x868 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
-                0x08002d10                strftime
- .text.strlen   0x08003578       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strlen.o)
-                0x08003578                strlen
- .text.strncmp  0x08003588       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncmp.o)
-                0x08003588                strncmp
- .text.strncpy  0x080035b4       0x24 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncpy.o)
-                0x080035b4                strncpy
- .text.strtok   0x080035d8       0x64 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok.o)
-                0x080035d8                strtok
+                0x08002cdc      0x868 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
+                0x08002cdc                strftime
+ .text.strlen   0x08003544       0x10 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strlen.o)
+                0x08003544                strlen
+ .text.strncmp  0x08003554       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncmp.o)
+                0x08003554                strncmp
+ .text.strncpy  0x08003580       0x24 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncpy.o)
+                0x08003580                strncpy
+ .text.strtok   0x080035a4       0x64 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok.o)
+                0x080035a4                strtok
  .text.__strtok_r
-                0x0800363c       0x56 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok_r.o)
-                0x0800363c                __strtok_r
- *fill*         0x08003692        0x2 
+                0x08003608       0x56 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok_r.o)
+                0x08003608                __strtok_r
+ *fill*         0x0800365e        0x2 
  .text._strtoul_r
-                0x08003694       0xf0 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
-                0x08003694                _strtoul_r
- .text.strtoul  0x08003784       0x1c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
-                0x08003784                strtoul
+                0x08003660       0xf0 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
+                0x08003660                _strtoul_r
+ .text.strtoul  0x08003750       0x1c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
+                0x08003750                strtoul
  .text.__ssputs_r
-                0x080037a0       0xb8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
-                0x080037a0                __ssputs_r
+                0x0800376c       0xb8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
+                0x0800376c                __ssputs_r
  .text._svfprintf_r
-                0x08003858      0x1d8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
-                0x08003858                _svfprintf_r
-                0x08003858                _svfiprintf_r
+                0x08003824      0x1d8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
+                0x08003824                _svfprintf_r
+                0x08003824                _svfiprintf_r
  .text.__get_current_time_locale
-                0x08003a30       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
-                0x08003a30                __get_current_time_locale
+                0x080039fc       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
+                0x080039fc                __get_current_time_locale
  .text.__tz_lock
-                0x08003a50        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
-                0x08003a50                __tz_lock
+                0x08003a1c        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
+                0x08003a1c                __tz_lock
  .text.__tz_unlock
-                0x08003a52        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
-                0x08003a52                __tz_unlock
+                0x08003a1e        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
+                0x08003a1e                __tz_unlock
  .text._printf_common
-                0x08003a54       0xe4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
-                0x08003a54                _printf_common
+                0x08003a20       0xe4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x08003a20                _printf_common
  .text._printf_i
-                0x08003b38      0x228 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
-                0x08003b38                _printf_i
+                0x08003b04      0x228 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x08003b04                _printf_i
  .text._vsnprintf_r
-                0x08003d60       0x52 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
-                0x08003d60                _vsnprintf_r
-                0x08003d60                _vsniprintf_r
- *fill*         0x08003db2        0x2 
+                0x08003d2c       0x52 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
+                0x08003d2c                _vsnprintf_r
+                0x08003d2c                _vsniprintf_r
+ *fill*         0x08003d7e        0x2 
  .text.vsnprintf
-                0x08003db4       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
-                0x08003db4                vsnprintf
-                0x08003db4                vsniprintf
- .text.abs      0x08003dd4        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-abs.o)
-                0x08003dd4                abs
+                0x08003d80       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
+                0x08003d80                vsnprintf
+                0x08003d80                vsniprintf
+ .text.abs      0x08003da0        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-abs.o)
+                0x08003da0                abs
  .text.__gettzinfo
-                0x08003ddc        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gettzinfo.o)
-                0x08003ddc                __gettzinfo
- .text.labs     0x08003de4        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-labs.o)
-                0x08003de4                labs
- .text.memchr   0x08003dec       0x1c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memchr-stub.o)
-                0x08003dec                memchr
- .text.memmove  0x08003e08       0x36 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memmove.o)
-                0x08003e08                memmove
+                0x08003da8        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gettzinfo.o)
+                0x08003da8                __gettzinfo
+ .text.labs     0x08003db0        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-labs.o)
+                0x08003db0                labs
+ .text.memchr   0x08003db8       0x1c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memchr-stub.o)
+                0x08003db8                memchr
+ .text.memmove  0x08003dd4       0x36 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memmove.o)
+                0x08003dd4                memmove
  .text._realloc_r
-                0x08003e3e       0x4c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-reallocr.o)
-                0x08003e3e                _realloc_r
- *fill*         0x08003e8a        0x2 
+                0x08003e0a       0x4c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-reallocr.o)
+                0x08003e0a                _realloc_r
+ *fill*         0x08003e56        0x2 
  .text.snprintf
-                0x08003e8c       0x64 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-snprintf.o)
-                0x08003e8c                snprintf
-                0x08003e8c                sniprintf
+                0x08003e58       0x64 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-snprintf.o)
+                0x08003e58                snprintf
+                0x08003e58                sniprintf
  .text._malloc_usable_size_r
-                0x08003ef0       0x12 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-msizer.o)
-                0x08003ef0                _malloc_usable_size_r
+                0x08003ebc       0x12 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-msizer.o)
+                0x08003ebc                _malloc_usable_size_r
  *(.rodata .rodata.*)
  .rodata.str1.1
-                0x08003f02        0x5 ./system/src/freertos/src/tasks.o
+                0x08003ece        0x5 ./system/src/freertos/src/tasks.o
  .rodata.ucExpectedStackBytes.5279
-                0x08003f07       0x14 ./system/src/freertos/src/tasks.o
+                0x08003ed3       0x14 ./system/src/freertos/src/tasks.o
  .rodata.str1.1
-                0x08003f1b       0x17 ./src/rtc/rtc.o
- *fill*         0x08003f32        0x2 
+                0x08003ee7       0x17 ./src/rtc/rtc.o
+ *fill*         0x08003efe        0x2 
  .rodata._ZL12xHelpCommand
-                0x08003f34       0x10 ./src/job/FreeRTOS_CLI.o
+                0x08003f00       0x10 ./src/job/FreeRTOS_CLI.o
  .rodata.str1.1
-                0x08003f44       0xdd ./src/job/FreeRTOS_CLI.o
- *fill*         0x08004021        0x3 
+                0x08003f10       0xdd ./src/job/FreeRTOS_CLI.o
+ *fill*         0x08003fed        0x3 
  .rodata._ZL6xClear
-                0x08004024       0x10 ./src/job/job.o
+                0x08003ff0       0x10 ./src/job/job.o
  .rodata._ZL6xHello
-                0x08004034       0x10 ./src/job/job.o
+                0x08004000       0x10 ./src/job/job.o
  .rodata._ZL4xLed
-                0x08004044       0x10 ./src/job/job.o
+                0x08004010       0x10 ./src/job/job.o
  .rodata.str1.1
-                0x08004054      0x189 ./src/job/job.o
+                0x08004020      0x189 ./src/job/job.o
                                 0x18f (size before relaxing)
- *fill*         0x080041dd        0x3 
+ *fill*         0x080041a9        0x3 
  .rodata._ZL5xDate
-                0x080041e0       0x10 ./src/job/job.o
+                0x080041ac       0x10 ./src/job/job.o
  .rodata._ZL8xGetTmpr
-                0x080041f0       0x10 ./src/job/job.o
+                0x080041bc       0x10 ./src/job/job.o
  .rodata._ZL6xReset
-                0x08004200       0x10 ./src/job/job.o
+                0x080041cc       0x10 ./src/job/job.o
  .rodata.str1.1
-                0x08004210       0x26 ./src/adc/adc.o
- *fill*         0x08004236        0x2 
- .rodata        0x08004238       0x4c ./src/main.o
+                0x080041dc       0x26 ./src/adc/adc.o
+ *fill*         0x08004202        0x2 
+ .rodata        0x08004204       0x4c ./src/main.o
  .rodata.str1.1
-                0x08004284       0x8c ./src/main.o
-                                 0xca (size before relaxing)
+                0x08004250       0x83 ./src/main.o
+                                 0xc1 (size before relaxing)
  .rodata.str1.1
-                0x08004310        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-impure.o)
- *fill*         0x08004312        0x2 
+                0x080042d3        0x2 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-impure.o)
+ *fill*         0x080042d5        0x3 
  .rodata.mon_lengths
-                0x08004314       0x60 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
+                0x080042d8       0x60 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
  .rodata.year_lengths
-                0x08004374        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
+                0x08004338        0x8 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
  .rodata.str1.1
-                0x0800437c       0x54 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
+                0x08004340       0x54 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
                                  0x66 (size before relaxing)
  .rodata.str1.1
-                0x080043d0       0x11 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
+                0x08004394       0x11 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
  .rodata.str1.1
-                0x080043e1      0x133 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
+                0x080043a5      0x133 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
                                 0x134 (size before relaxing)
  .rodata._C_time_locale
-                0x08004514       0xfc /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
+                0x080044d8       0xfc /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
  .rodata.str1.1
-                0x08004610        0x4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzvars.o)
+                0x080045d4        0x4 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzvars.o)
  .rodata.str1.1
-                0x08004614       0x22 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x080045d8       0x22 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
  .rodata._ctype_
-                0x08004636      0x101 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-ctype_.o)
-                0x08004636                _ctype_
+                0x080045fa      0x101 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-ctype_.o)
+                0x080045fa                _ctype_
  *(vtable)
  *(.eh_frame*)
  *(.glue_7)
@@ -2635,31 +2633,31 @@ END GROUP
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08004738        0x0
+.vfp11_veneer   0x080046fc        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08004738        0x0
+.v4_bx          0x080046fc        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08004738        0x0
+.iplt           0x080046fc        0x0
  .iplt          0x00000000        0x0 ./system/src/stm32f1-stdperiph/misc.o
 
-.rel.dyn        0x08004738        0x0
+.rel.dyn        0x080046fc        0x0
  .rel.iplt      0x00000000        0x0 ./system/src/stm32f1-stdperiph/misc.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004738                __exidx_start = .
+                0x080046fc                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08004738                __exidx_end = .
-                0x08004738                . = ALIGN (0x4)
-                0x08004738                _etext = .
-                0x08004738                __etext = .
-                0x08004738                _sidata = _etext
+                0x080046fc                __exidx_end = .
+                0x080046fc                . = ALIGN (0x4)
+                0x080046fc                _etext = .
+                0x080046fc                __etext = .
+                0x080046fc                _sidata = _etext
 
-.data           0x20000000       0xec load address 0x08004738
+.data           0x20000000       0xec load address 0x080046fc
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
                 0x20000000                __data_start__ = .
@@ -2702,10 +2700,10 @@ END GROUP
                 0x200000ec                _edata = .
                 0x200000ec                __data_end__ = .
 
-.igot.plt       0x200000ec        0x0 load address 0x08004824
+.igot.plt       0x200000ec        0x0 load address 0x080047e8
  .igot.plt      0x00000000        0x0 ./system/src/stm32f1-stdperiph/misc.o
 
-.bss            0x200000ec     0x3f74 load address 0x08004824
+.bss            0x200000ec     0x3f74 load address 0x080047e8
                 0x200000ec                . = ALIGN (0x4)
                 0x200000ec                __bss_start__ = .
                 0x200000ec                _sbss = .
@@ -2823,7 +2821,7 @@ END GROUP
                 0x20004060                PROVIDE (__end, _end_noinit)
                 0x20004060                PROVIDE (__end__, _end_noinit)
 
-._check_stack   0x20004060      0x100 load address 0x08008798
+._check_stack   0x20004060      0x100 load address 0x0800875c
                 0x20004060                . = ALIGN (0x4)
                 0x20004160                . = (. + _Minimum_Stack_Size)
  *fill*         0x20004060      0x100 
@@ -3060,7 +3058,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xd18
+.debug_aranges  0x00000000      0xd10
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x40 ./system/src/stm32f1-stdperiph/misc.o
@@ -3121,12 +3119,12 @@ END GROUP
  .debug_aranges
                 0x00000ca0       0x30 ./src/adc/adc.o
  .debug_aranges
-                0x00000cd0       0x48 ./src/main.o
+                0x00000cd0       0x40 ./src/main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xec5b
+.debug_info     0x00000000     0xebd3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x545 ./system/src/stm32f1-stdperiph/misc.o
  .debug_info    0x00000545      0xbef ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
@@ -3157,7 +3155,7 @@ END GROUP
  .debug_info    0x0000b4f5     0x14e4 ./src/job/job.o
  .debug_info    0x0000c9d9      0x7cb ./src/dwt/dwt.o
  .debug_info    0x0000d1a4      0x799 ./src/adc/adc.o
- .debug_info    0x0000d93d     0x131e ./src/main.o
+ .debug_info    0x0000d93d     0x1296 ./src/main.o
 
 .debug_abbrev   0x00000000     0x3848
  *(.debug_abbrev)
@@ -3192,7 +3190,7 @@ END GROUP
  .debug_abbrev  0x000031f6      0x26f ./src/adc/adc.o
  .debug_abbrev  0x00003465      0x3e3 ./src/main.o
 
-.debug_line     0x00000000     0x5873
+.debug_line     0x00000000     0x5861
  *(.debug_line)
  .debug_line    0x00000000      0x20c ./system/src/stm32f1-stdperiph/misc.o
  .debug_line    0x0000020c      0x4f6 ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
@@ -3223,9 +3221,9 @@ END GROUP
  .debug_line    0x000049e2      0x4de ./src/job/job.o
  .debug_line    0x00004ec0      0x278 ./src/dwt/dwt.o
  .debug_line    0x00005138      0x29f ./src/adc/adc.o
- .debug_line    0x000053d7      0x49c ./src/main.o
+ .debug_line    0x000053d7      0x48a ./src/main.o
 
-.debug_frame    0x00000000     0x2380
+.debug_frame    0x00000000     0x2368
  *(.debug_frame)
  .debug_frame   0x00000000       0x68 ./system/src/stm32f1-stdperiph/misc.o
  .debug_frame   0x00000068      0x280 ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
@@ -3256,43 +3254,43 @@ END GROUP
  .debug_frame   0x000019fc       0xe0 ./src/job/job.o
  .debug_frame   0x00001adc       0x70 ./src/dwt/dwt.o
  .debug_frame   0x00001b4c       0x6c ./src/adc/adc.o
- .debug_frame   0x00001bb8       0xb0 ./src/main.o
- .debug_frame   0x00001c68       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-errno.o)
- .debug_frame   0x00001c88       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime.o)
- .debug_frame   0x00001cb4       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime_r.o)
- .debug_frame   0x00001cd4       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-malloc.o)
- .debug_frame   0x00001d04       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcmp.o)
- .debug_frame   0x00001d30       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001d58       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memset.o)
- .debug_frame   0x00001d78       0x5c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
- .debug_frame   0x00001dd4       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-freer.o)
- .debug_frame   0x00001e00       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00001e2c       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sbrkr.o)
- .debug_frame   0x00001e58       0x58 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sprintf.o)
- .debug_frame   0x00001eb0       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcat.o)
- .debug_frame   0x00001ed8       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcpy.o)
- .debug_frame   0x00001ef8       0x50 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
- .debug_frame   0x00001f48       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strlen.o)
- .debug_frame   0x00001f68       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncmp.o)
- .debug_frame   0x00001f94       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncpy.o)
- .debug_frame   0x00001fbc       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok.o)
- .debug_frame   0x00001fec       0x40 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok_r.o)
- .debug_frame   0x0000202c       0x54 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
- .debug_frame   0x00002080       0x88 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
- .debug_frame   0x00002108       0x40 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
- .debug_frame   0x00002148       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
- .debug_frame   0x00002178       0x60 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
- .debug_frame   0x000021d8       0x4c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
- .debug_frame   0x00002224       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-abs.o)
- .debug_frame   0x00002244       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gettzinfo.o)
- .debug_frame   0x00002264       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-labs.o)
- .debug_frame   0x00002284       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memchr-stub.o)
- .debug_frame   0x000022ac       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memmove.o)
- .debug_frame   0x000022d8       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00002308       0x58 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-snprintf.o)
- .debug_frame   0x00002360       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00001bb8       0x98 ./src/main.o
+ .debug_frame   0x00001c50       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-errno.o)
+ .debug_frame   0x00001c70       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime.o)
+ .debug_frame   0x00001c9c       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gmtime_r.o)
+ .debug_frame   0x00001cbc       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-malloc.o)
+ .debug_frame   0x00001cec       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcmp.o)
+ .debug_frame   0x00001d18       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001d40       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memset.o)
+ .debug_frame   0x00001d60       0x5c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-mktm_r.o)
+ .debug_frame   0x00001dbc       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001de8       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001e14       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001e40       0x58 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-sprintf.o)
+ .debug_frame   0x00001e98       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcat.o)
+ .debug_frame   0x00001ec0       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strcpy.o)
+ .debug_frame   0x00001ee0       0x50 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strftime.o)
+ .debug_frame   0x00001f30       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strlen.o)
+ .debug_frame   0x00001f50       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncmp.o)
+ .debug_frame   0x00001f7c       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strncpy.o)
+ .debug_frame   0x00001fa4       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok.o)
+ .debug_frame   0x00001fd4       0x40 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtok_r.o)
+ .debug_frame   0x00002014       0x54 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-strtoul.o)
+ .debug_frame   0x00002068       0x88 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-svfprintf.o)
+ .debug_frame   0x000020f0       0x40 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-timelocal.o)
+ .debug_frame   0x00002130       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-tzlock.o)
+ .debug_frame   0x00002160       0x60 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vfprintf_i.o)
+ .debug_frame   0x000021c0       0x4c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-vsnprintf.o)
+ .debug_frame   0x0000220c       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-abs.o)
+ .debug_frame   0x0000222c       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-gettzinfo.o)
+ .debug_frame   0x0000224c       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-labs.o)
+ .debug_frame   0x0000226c       0x28 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00002294       0x2c /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-memmove.o)
+ .debug_frame   0x000022c0       0x30 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x000022f0       0x58 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-snprintf.o)
+ .debug_frame   0x00002348       0x20 /home/kwluo/Projects/Embeded/Cortex-M3/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m/libg_s.a(lib_a-nano-msizer.o)
 
-.debug_str      0x00000000     0x42fb
+.debug_str      0x00000000     0x434b
  *(.debug_str)
  .debug_str     0x00000000      0x3cb ./system/src/stm32f1-stdperiph/misc.o
                                 0x449 (size before relaxing)
@@ -3352,10 +3350,10 @@ END GROUP
                                 0x562 (size before relaxing)
  .debug_str     0x00004270       0x35 ./src/adc/adc.o
                                 0x5ab (size before relaxing)
- .debug_str     0x000042a5       0x56 ./src/main.o
-                                0xad7 (size before relaxing)
+ .debug_str     0x000042a5       0xa6 ./src/main.o
+                                0xacf (size before relaxing)
 
-.debug_loc      0x00000000     0x586d
+.debug_loc      0x00000000     0x584c
  *(.debug_loc)
  .debug_loc     0x00000000      0x170 ./system/src/stm32f1-stdperiph/misc.o
  .debug_loc     0x00000170      0x8d1 ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
@@ -3382,7 +3380,7 @@ END GROUP
  .debug_loc     0x00005220      0x37b ./src/job/job.o
  .debug_loc     0x0000559b       0xc6 ./src/dwt/dwt.o
  .debug_loc     0x00005661      0x11c ./src/adc/adc.o
- .debug_loc     0x0000577d       0xf0 ./src/main.o
+ .debug_loc     0x0000577d       0xcf ./src/main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -3400,7 +3398,7 @@ END GROUP
  *(.debug_varnames)
 OUTPUT(stm32f10xx_freertos_cpp_demo.elf elf32-littlearm)
 
-.debug_ranges   0x00000000      0xd58
+.debug_ranges   0x00000000      0xd50
  .debug_ranges  0x00000000       0x30 ./system/src/stm32f1-stdperiph/misc.o
  .debug_ranges  0x00000030      0x128 ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
  .debug_ranges  0x00000158       0x68 ./system/src/stm32f1-stdperiph/stm32f10x_bkp.o
@@ -3430,4 +3428,4 @@ OUTPUT(stm32f10xx_freertos_cpp_demo.elf elf32-littlearm)
  .debug_ranges  0x00000bf8       0x60 ./src/job/job.o
  .debug_ranges  0x00000c58       0x90 ./src/dwt/dwt.o
  .debug_ranges  0x00000ce8       0x38 ./src/adc/adc.o
- .debug_ranges  0x00000d20       0x38 ./src/main.o
+ .debug_ranges  0x00000d20       0x30 ./src/main.o
