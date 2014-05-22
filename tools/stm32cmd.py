@@ -49,7 +49,7 @@ def serial_write():
     cmdlist=["date","gettmpr","hello","help","led 1 on","led 1 off","clear"]
     while True:
         for x in cmdlist:
-            time.sleep(0.02)
+            time.sleep(0.05)
             # print date to log file
             now=datetime.datetime.now()
             print '\r\n' + \
