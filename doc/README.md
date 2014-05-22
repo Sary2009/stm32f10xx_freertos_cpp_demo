@@ -23,3 +23,5 @@ Please forgive my poor English.
 1. Fix bug when frequent commands arrive.
 
 2. Support backspace key in command line.
+
+3. Support Ctrl+c to cancel command.
