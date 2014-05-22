@@ -1,0 +1,4 @@
+
+jlinkflash.py ----------> flash stm32 with jlink
+
+stm32cmd.py ------------> test command automatically
