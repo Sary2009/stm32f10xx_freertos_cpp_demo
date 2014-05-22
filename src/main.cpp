@@ -67,7 +67,6 @@ QueueHandle_t cmdQueue;
 
 /* class declearation */
 rtc stm32rtc;
-
 usart usart1;
 led led0, led1;
 adc adc_tmpr;

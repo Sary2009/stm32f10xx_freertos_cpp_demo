@@ -157,30 +157,30 @@ rtc::puts (char * string, size_t buf_len)
 /*            STM32F10x Peripherals Interrupt Handlers                        */
 /******************************************************************************/
 
-extern rtc stm32rtc;
-
-extern "C" void
-RTC_IRQHandler (void)
-{
-
-  static portBASE_TYPE xHigherPriorityTaskWoken;
-
-  if (RTC_GetITStatus (RTC_IT_SEC) != RESET)
-    {
-
-      /* Clear the RTC Second interrupt */
-      RTC_ClearITPendingBit (RTC_IT_SEC);
-
-      xSemaphoreGiveFromISR(stm32rtc.rtcSemaphore, &xHigherPriorityTaskWoken);
-
-      /* Wait until last write operation on RTC registers has finished */
-      RTC_WaitForLastTask ();
-
-    }
-  /* If xHigherPriorityTaskWoken was set to true you
-   we should yield.  The actual macro used here is
-   port specific. */
-  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
-
-}
+//extern rtc stm32rtc;
+//
+//extern "C" void
+//RTC_IRQHandler (void)
+//{
+//
+//  static portBASE_TYPE xHigherPriorityTaskWoken;
+//
+//  if (RTC_GetITStatus (RTC_IT_SEC) != RESET)
+//    {
+//
+//      /* Clear the RTC Second interrupt */
+//      RTC_ClearITPendingBit (RTC_IT_SEC);
+//
+//      xSemaphoreGiveFromISR(stm32rtc.rtcSemaphore, &xHigherPriorityTaskWoken);
+//
+//      /* Wait until last write operation on RTC registers has finished */
+//      RTC_WaitForLastTask ();
+//
+//    }
+//  /* If xHigherPriorityTaskWoken was set to true you
+//   we should yield.  The actual macro used here is
+//   port specific. */
+//  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+//
+//}
 
