@@ -23,3 +23,5 @@
 2. Support backspace key in command line.
 
 3. Support ctrl+c to cancel command.
+
+4. Support ctrl+l to clean terminal screen.
