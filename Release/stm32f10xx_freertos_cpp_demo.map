@@ -3181,7 +3181,7 @@ END GROUP
  .debug_abbrev  0x00003185      0x26f ./src/adc/adc.o
  .debug_abbrev  0x000033f4      0x3e3 ./src/main.o
 
-.debug_line     0x00000000     0x585c
+.debug_line     0x00000000     0x585a
  *(.debug_line)
  .debug_line    0x00000000      0x20c ./system/src/stm32f1-stdperiph/misc.o
  .debug_line    0x0000020c      0x4f6 ./system/src/stm32f1-stdperiph/stm32f10x_adc.o
@@ -3206,13 +3206,13 @@ END GROUP
  .debug_line    0x00003a67      0x1c9 ./system/src/cmsis/system_stm32f10x.o
  .debug_line    0x00003c30       0x58 ./system/src/cmsis/vectors_stm32f10x.o
  .debug_line    0x00003c88      0x402 ./src/usart/usart.o
- .debug_line    0x0000408a      0x42f ./src/rtc/rtc.o
- .debug_line    0x000044b9      0x1fd ./src/led/led.o
- .debug_line    0x000046b6      0x305 ./src/job/FreeRTOS_CLI.o
- .debug_line    0x000049bb      0x4e9 ./src/job/job.o
- .debug_line    0x00004ea4      0x278 ./src/dwt/dwt.o
- .debug_line    0x0000511c      0x29f ./src/adc/adc.o
- .debug_line    0x000053bb      0x4a1 ./src/main.o
+ .debug_line    0x0000408a      0x42d ./src/rtc/rtc.o
+ .debug_line    0x000044b7      0x1fd ./src/led/led.o
+ .debug_line    0x000046b4      0x305 ./src/job/FreeRTOS_CLI.o
+ .debug_line    0x000049b9      0x4e9 ./src/job/job.o
+ .debug_line    0x00004ea2      0x278 ./src/dwt/dwt.o
+ .debug_line    0x0000511a      0x29f ./src/adc/adc.o
+ .debug_line    0x000053b9      0x4a1 ./src/main.o
 
 .debug_frame    0x00000000     0x234c
  *(.debug_frame)

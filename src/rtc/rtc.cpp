@@ -1,7 +1,6 @@
 
+
 #include "rtc.h"
-
-
 
 //#define RTCClockOutput_Enable  /* RTC Clock/64 is output on tamper pin(PC.13) */
 
