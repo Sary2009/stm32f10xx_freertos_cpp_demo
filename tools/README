@@ -1,4 +1,4 @@
 
 jlinkflash.py ----------> flash stm32 with jlink
 
-stm32cmd.py   ----------> test command automatically to know system stability.
+stm32cmd.py   ----------> test command automatically to check system stability and problems.
