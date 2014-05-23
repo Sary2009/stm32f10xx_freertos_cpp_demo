@@ -13,7 +13,7 @@ Support ctrl+l to clean terminal screen.
 
 type "help" see all command help information
 
-> help
+>
 help
 
 help:
