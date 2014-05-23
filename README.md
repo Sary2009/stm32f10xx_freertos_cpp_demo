@@ -13,8 +13,6 @@ Support ctrl+l to clean terminal screen.
 
 Type "help" see all command help information, and you can run each command.
 
->help
-
 >help:
 
 > Lists all the registered commands
