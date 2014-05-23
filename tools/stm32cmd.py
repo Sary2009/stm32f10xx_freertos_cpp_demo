@@ -20,7 +20,7 @@ ser.rtscts = False      #disable hardware (RTS/CTS) flow control
 ser.dsrdtr = False      #disable hardware (DSR/DTR) flow control
 ser.writeTimeout = 2    #timeout for write
 
-# modify baudrate as your want
+# modify baudrate to your want
 #ser.baudrate = 230400
 ser.baudrate = 460800
 locations=['/dev/ttyUSB0',
