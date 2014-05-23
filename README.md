@@ -13,28 +13,28 @@ Support ctrl+l to clean terminal screen.
 
 type "help" see all command help information
 
+>help
+
+>help:
+
+> Lists all the registered commands
 >
-help
-
-help:
- Lists all the registered commands
-
-gettmpr:
- show stm32's temperature 
-
-date:
- show date
-
-reset:
- reset system
-
-hello:
- print Hello world!
-
-led <0|1> <on|off>:
- turn on or off led0|1
-
-clear:
- clear screen
-
+>gettmpr:
+> show stm32's temperature 
+>
+>date:
+> show date
+>
+>reset:
+> reset system
+>
+>hello:
+> print Hello world!
+>
+>led <0|1> <on|off>:
+> turn on or off led0|1
+>
+>clear:
+> clear screen
+>
 Now is your turn to make your own commands in job.cpp
