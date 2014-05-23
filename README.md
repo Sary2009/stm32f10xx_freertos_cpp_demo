@@ -36,5 +36,5 @@ type "help" see all command help information
 >
 >clear:
 > clear screen
->
+
 Now is your turn to make your own commands in job.cpp
