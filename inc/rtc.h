@@ -14,6 +14,7 @@
 #include "semphr.h"
 
 //#define ENABLE_RTC_IRQ
+//#define RTCClockOutput_Enable  /* RTC Clock/64 is output on tamper pin(PC.13) */
 
 class rtc
 {
