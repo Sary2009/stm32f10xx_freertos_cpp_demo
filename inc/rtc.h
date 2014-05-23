@@ -1,7 +1,13 @@
 #ifndef RTC_H_
 #define RTC_H_
 
+/* Includes ------------------------------------------------------------------*/
+#include <cstring>
 #include <ctime>
+
+/* ST library includes. */
+#include "cmsis_device.h"
+
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"

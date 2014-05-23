@@ -1,21 +1,9 @@
-/* Includes ------------------------------------------------------------------*/
-#include <cstring>
-#include <ctime>
 
-/* ST library includes. */
-#include "cmsis_device.h"
-
-#include "led.h"
 #include "rtc.h"
-#include "usart.h"
 
-
-extern usart usart1;
 
 
 //#define RTCClockOutput_Enable  /* RTC Clock/64 is output on tamper pin(PC.13) */
-
-extern usart usart1;
 
 void
 rtc::init (void)
