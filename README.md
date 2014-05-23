@@ -11,7 +11,7 @@ Support ctrl+c to cancel command.
 
 Support ctrl+l to clean terminal screen.
 
-type "help" see all command help information
+Type "help" see all command help information, and you can run each command.
 
 >help
 
