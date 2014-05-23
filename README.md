@@ -3,13 +3,13 @@ stm32f10xx_freertos_cpp_demo
 
 stm32f10xx freertos with cli plugin demo, support backspace, ctrl+c and so on.
 
+This demo can let you interact with stm32 by using serial command line.
 
 Support backspace key in command line.
 
 Support ctrl+c to cancel command.
 
 Support ctrl+l to clean terminal screen.
-
 
 type "help" see all command help information
 
