@@ -7,7 +7,7 @@
 #include "queue.h"
 #include "semphr.h"
 
-#define ENABLE_RTC_IRQ
+//#define ENABLE_RTC_IRQ
 
 class rtc
 {
