@@ -75,9 +75,9 @@ rtc::init (void)
   else
     {
 
-//		/* Wait until last write operation on RTC registers has finished */
-//		RTC_WaitForLastTask ();
-//		RTC_SetCounter(1400550000);
+//      /* Wait until last write operation on RTC registers has finished */
+//      RTC_WaitForLastTask ();
+//      RTC_SetCounter (1400550000);
 
       /* Wait until last write operation on RTC registers has finished */
       RTC_WaitForLastTask ();
